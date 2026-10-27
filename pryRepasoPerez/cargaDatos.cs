@@ -10,7 +10,7 @@ namespace pryRepasoPerez
 {
     public partial class cargaDatos : Form
     {
-        string dato;
+        int dato;
         string nombre;
 
         public cargaDatos()
@@ -26,7 +26,7 @@ namespace pryRepasoPerez
                 return;
             }
 
-            dato = txtCajaCodigo.Text;
+            dato = int.Parse(txtCajaCodigo.Text);
             nombre = txtNombre.Text;
             MessageBox.Show("Registraste: " + "\n" + dato + "\n" + nombre);
 

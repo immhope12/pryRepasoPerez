@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cargaDatos));
             txtCajaCodigo = new TextBox();
             lblCodigo = new Label();
             btnRegistrar = new Button();
@@ -88,6 +89,7 @@
             Controls.Add(btnRegistrar);
             Controls.Add(lblCodigo);
             Controls.Add(txtCajaCodigo);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "cargaDatos";
